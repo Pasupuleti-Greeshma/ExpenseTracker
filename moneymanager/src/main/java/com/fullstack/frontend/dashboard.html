@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+    <div class="popupmenu">
+        <div class="menu">
+            <span id="1"> Dashboard</span>
+            <span id="2"> Transaction history</span>
+            <span id="3"> New transaction</span>
+            <!-- <span id="4">Saved transactions</span> -->
+            <span id="5"> Statistics</span>
+            <span id="6"> settings</span>
+            <!-- <a href="index.html"> -->
+            <span id="7">Logout</span>
+            <!-- </a> -->
+        </div>
+        <div id="main-content">
+            <h1 id="page-title"></h1>
+            <div id="dashboard-container"></div>
+        </div>
+    </div>
+
+
+    <div class="chart-container">
+        <canvas id="donutChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="gaugeChart"></canvas>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="update-model"
+        style="display:none; position:fixed; top:20%; left:40%; background:white; padding:20px; border:1px solid #ccc; z-index:1000;">
+        <h3>Update Values</h3>
+        <label>Income: <input type="number" id="model-income"></label><br>
+        <label>Expense: <input type="number" id="model-expense"></label><br>
+        <label>Cash in Hand: <input type="number" id="model-incash"></label><br>
+        <button id="model-save-btn">Confirm</button>
+    </div>
+
+    <!-- Donut Update Modal -->
+    <div id="donut-update-modal"
+        style="display:none; position:fixed; top:20%; left:40%; background:#cadcee; padding:20px; border-radius:10px; color:rgb(28, 25, 25); z-index:1000;margin-top:10px;">
+        <h3>Update Categories</h3>
+        <label>Food: <input type="number" id="m-food"></label><br>
+        <label>Household: <input type="number" id="m-household"></label><br>
+        <label>Clothing: <input type="number" id="m-clothing"></label><br>
+        <label>Healthcare: <input type="number" id="m-healthcare"></label><br>
+        <button id="donut-save-btn">Confirm</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="dashboard.js"></script>
+    <!-- <script src="settings.js"></script> -->
+</body>
+
+</html>

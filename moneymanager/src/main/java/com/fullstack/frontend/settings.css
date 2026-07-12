@@ -1,0 +1,333 @@
+.settings {
+    width: 420px;
+    margin-left: 60px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    animation: fade .3s ease;
+}
+
+.profile-info {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* .profile-info img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #093479;
+    object-fit: cover;
+    margin-bottom: 8px;
+} */
+
+.profile-info h2 {
+    font-size: 24px;
+    margin: 4px 0;
+    color: #171515;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #8d99b7;
+    margin-bottom: 10px;
+}
+
+.settings label {
+    margin: 8px 0 4px;
+    font-size: 15px;
+    color: #072763;
+}
+
+.settings input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #eef0f5;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.settings input:focus {
+    border: 2px solid #6aa6ff;
+}
+
+.update-btn {
+    margin-top: 18px;
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background: #6aa6ff;
+    color: #071c3d;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background: #8ab8ff;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   NEW TRANSACTION PAGE
+========================== */
+
+.transaction-page {
+    width: 500px;
+    margin: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    animation: fade .3s ease;
+}
+
+/* ==========================
+   EXPENSE / INCOME BUTTONS
+========================== */
+
+.transaction-type {
+
+    display: flex;
+
+    width: 420px;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+.type-btn {
+
+    flex: 1;
+
+    height: 45px;
+
+    background: white;
+
+    border: none;
+
+    color: #1d2c4f;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border-bottom: 3px solid transparent;
+
+    transition: .3s;
+
+}
+
+.type-btn:hover {
+
+    border-bottom: 3px solid #4d90fe;
+
+}
+
+.type-btn.active {
+
+    border-bottom: 3px solid #4d90fe;
+
+    color: #4d90fe;
+
+}
+
+/* #expense-btn,
+#income-btn {
+    background: #ffffff !important;
+    color: #1d2c4f !important;
+}
+
+#expense-btn.active,
+#income-btn.active {
+    background: #ffffff !important;
+    border-bottom: 3px solid #4d90fe !important;
+} */
+
+/* ==========================
+   CATEGORY
+========================== */
+
+.category-section {
+
+    margin-bottom: 25px;
+
+}
+
+.category-section>label {
+
+    display: block;
+
+    color: #2f53d8;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+.category-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px 25px;
+
+}
+
+.category-grid label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: 140px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    color: #111;
+
+}
+
+.category-grid input[type="radio"] {
+
+    width: 16px;
+
+    height: 16px;
+
+    accent-color: #4d90fe;
+
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #10199c;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.form-group input {
+    width: 480px;
+    height: 42px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: #ebedf1;
+    color: rgb(15, 14, 14);
+    padding: 0 14px;
+    font-size: 15px;
+}
+
+.form-group input::placeholder {
+    color: #888;
+}
+
+.form-group input:focus {
+    border-bottom: 3px solid #4d90fe;
+}
+
+/* Date Icon */
+
+input[type="date"] {
+    color: rgb(20, 19, 19);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+#save-transaction {
+    width: 190px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background: #6aa6ff;
+    color: #0a2047;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#save-transaction:hover {
+    background: #8ab8ff;
+}
+
+#cancel-transaction {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #6aa6ff;
+    border-radius: 6px;
+    background: transparent;
+    color: #6aa6ff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#cancel-transaction:hover {
+    background: #6aa6ff;
+    color: #082147;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

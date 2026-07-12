@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.profile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-left: 60%;
+    margin-top: 20%;
+}
+
+.profile label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(50, 50, 188);
+}
+
+
+.fp {
+    font-size: 0.85rem;
+    font-weight: 100;
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    font-weight: 300;
+}
+
+.input1 {
+    height: 30px;
+    width: 30%;
+    padding: 5px;
+    border: 1px solid grey;
+    color: rgb(50, 50, 188);
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+
+.input2 {
+    height: 30px;
+    width: 30%;
+    padding: 5px;
+    border: 1px solid grey;
+    color: rgb(50, 50, 188);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.input1:hover {
+    border-color: 2px solid rgb(117, 117, 173);
+}
+
+.input2:hover {
+    border-color: 2px solid rgb(103, 103, 183);
+}
+
+.button {
+    height: 40px;
+    width: 20%;
+    margin-top: 3%;
+    padding: 5px;
+    background: #356dff;
+    color: white;
+    border-radius: 8px;
+    margin-left: 5%;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}

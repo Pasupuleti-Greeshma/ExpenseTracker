@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <!-- <div class="shape shape1"></div>
+    <div class="shape shape2"></div> -->
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Register</h1>
+
+            <form>
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <small id="nameError">Name is required</small>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <small id="emailError">Email is required</small>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <small id="passwordError">Password is required</small>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password">
+                    <small id="confirmError">Passwords do not match</small>
+                </div>
+
+                <button type="submit">Register</button>
+
+                <p class="terms">
+                    By creating an account you agree to our
+                    <a href="#">Terms & Conditions</a>
+                </p>
+
+                <p class="login">
+                    Already a member?
+                    <a href="login.html">Login Here</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+    <script type="module" src="register.js"> </script>
+</body>
+
+</html>

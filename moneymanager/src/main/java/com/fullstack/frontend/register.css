@@ -1,0 +1,286 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container {
+    width: 1200px;
+    height: 700px;
+
+    margin: auto;
+
+    display: flex;
+
+    /* justify-content: center;
+    align-items: center; */
+
+    gap: 80px;
+
+    min-height: 100vh;
+}
+
+/* ===========================
+   LEFT IMAGE
+=========================== */
+
+.left-section {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+
+    width: 470px;
+    height: 560px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .18);
+}
+
+.image-box img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* ===========================
+   RIGHT CARD
+=========================== */
+
+.right-section {
+    width: 420px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+
+    width: 50%;
+    margin-left: 600px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 25px 35px;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .15);
+}
+
+.card h1 {
+
+    color: #356dff;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+/* ===========================
+   INPUT GROUP
+=========================== */
+
+.input-group {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+}
+
+.input-group label {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #444;
+
+    margin-bottom: 8px;
+}
+
+.input-group input {
+
+    height: 40px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 10px;
+
+    padding: 0 15px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.input-group input:focus {
+
+    border-color: #356dff;
+
+    box-shadow: 0 0 5px rgba(53, 109, 255, .3);
+}
+
+.input-group small {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button {
+
+    width: 100%;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #356dff;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 12px;
+
+    transition: .3s;
+}
+
+button:hover {
+
+    background: #2559dd;
+}
+
+/* ===========================
+   TERMS
+=========================== */
+
+.terms {
+
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    color: #666;
+
+    text-align: center;
+
+    line-height: 18px;
+}
+
+.terms a {
+
+    color: #356dff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+/* ===========================
+   LOGIN
+=========================== */
+
+.login {
+
+    text-align: center;
+
+    margin-top: 12px;
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+.login a {
+
+    color: #356dff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.login a:hover {
+
+    text-decoration: underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px) {
+
+    .container {
+
+        width: 95%;
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        padding: 40px 0;
+    }
+
+    .left-section {
+
+        display: none;
+    }
+
+    .right-section {
+
+        width: 100%;
+    }
+
+    .card {
+
+        max-width: 430px;
+    }
+}
